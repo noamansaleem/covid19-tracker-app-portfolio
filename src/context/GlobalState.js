@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from 'react';
 export const GlobalContext = createContext({});
 
 export const GlobalProvider = ({ children }) => {
-    const [globalData, setGlobalData] = useState({ data: { Recovered: '', Death: '', Confirmed: '', Last_Checked: '', Last_Reported: '' } });
+    const [globalData, setGlobalData] = useState({ data: { Recovered: '', Death: '', Confirmed: '', Last_Checked: '', Last_Reported: '', location: '' } });
     const [isFetchingGlobal, setIsFetchingGlobal] = useState(true);
     useEffect(() => {
         const getGlobalData = async () => {

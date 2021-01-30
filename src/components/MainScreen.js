@@ -58,6 +58,7 @@ export default function MainScreen() {
 
     const { globalData, isFetchingGlobal } = useContext(GlobalContext);
     const globalResults = globalData.data;
+    delete globalResults.location;
     console.log(globalResults);
 
 
