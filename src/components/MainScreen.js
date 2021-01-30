@@ -90,7 +90,7 @@ export default function MainScreen() {
                 {Object.keys(globalResults).map((val, index) => {
                     titleColor = customColors2[index];
                     if (index < 5) {
-                        if (index === 3 || index === 4) {
+                        {/* if (index === 3 || index === 4) {
                             return (
                                 <Grid item xs={8} sm={6} key={index}>
                                     <Paper className={classes.paper}>
@@ -106,7 +106,7 @@ export default function MainScreen() {
                                     </Paper>
                                 </Grid>
                             )
-                        }
+                        } */}
 
                         return (
                             <Grid item xs={8} sm={6} key={index}>
