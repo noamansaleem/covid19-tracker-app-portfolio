@@ -89,42 +89,25 @@ export default function MainScreen() {
             <Grid justify="center" container spacing={3}>
                 {Object.keys(globalResults).map((val, index) => {
                     titleColor = customColors2[index];
-                    if (index < 5) {
-                        {/* if (index === 3 || index === 4) {
-                            return (
-                                <Grid item xs={8} sm={6} key={index}>
-                                    <Paper className={classes.paper}>
 
-                                        <Typography variant="h5" gutterBottom className={`${titleColor} `}>
-                                            {customNames[index]}
-                                        </Typography>
 
-                                        <Typography style={{ color: 'black', fontSize: 22 }} variant="subtitle2" gutterBottom>
-                                            {globalResults[val]}
-                                        </Typography>
+                    return (
+                        <Grid item xs={8} sm={6} key={index}>
+                            <Paper className={classes.paper}>
 
-                                    </Paper>
-                                </Grid>
-                            )
-                        } */}
+                                <Typography variant="h5" gutterBottom className={`${titleColor} `}>
+                                    {customNames[index]}
+                                </Typography>
 
-                        return (
-                            <Grid item xs={8} sm={6} key={index}>
-                                <Paper className={classes.paper}>
+                                <Typography style={{ color: 'black', fontSize: 22 }} variant="subtitle2" gutterBottom>
+                                    {globalResults[val]}
+                                </Typography>
 
-                                    <Typography variant="h5" gutterBottom className={`${titleColor} `}>
-                                        {customNames[index]}
-                                    </Typography>
+                            </Paper>
+                        </Grid>
+                    )
 
-                                    <Typography style={{ color: 'black', fontSize: 22 }} variant="subtitle2" gutterBottom>
-                                        {globalResults[val]}
-                                    </Typography>
 
-                                </Paper>
-                            </Grid>
-                        )
-
-                    }
                 })}
             </Grid>
         </div >
